@@ -151,9 +151,10 @@ canvas {
   background-color: #45a049;
 }
 
-#piechart {
+.piechart {
   width: 400px; /* Set the desired width */
   height: 400px; /* Set the desired height */
+  border: 1px solid red;
   margin: 20px auto; /* Center the chart */
 }
 

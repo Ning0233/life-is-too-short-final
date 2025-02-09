@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to update the leaderboard with the given college name
     function updateLeaderboard(collegeName) {
-        leaderboardtitel.textContent = `Leaderboard for ${collegeName}`;
+        leaderboardtitel.textContent = `Goof Leaderboard for ${collegeName}`;
     }
 
     // Log the college name when it's saved

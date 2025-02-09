@@ -1,9 +1,9 @@
 function displayLeaderboard() {
   // Placeholder function for displaying the leaderboard
   const leaderboard = [
-    { name: 'Alice', score: 100 },
-    { name: 'Bob', score: 90 },
-    { name: 'Charlie', score: 80 }
+    { name: 'Alice', score: 10 },
+    { name: 'Bob', score: 9 },
+    { name: 'Charlie', score: 8 }
   ];
 
   const leaderboardElement = document.getElementById('leaderboard');

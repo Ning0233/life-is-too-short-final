@@ -1,9 +1,9 @@
 function displayLeaderboard() {
   // Placeholder function for displaying the leaderboard
   const leaderboard = [
-    { name: 'Alice', score: 10 },
-    { name: 'Bob', score: 9 },
-    { name: 'Charlie', score: 8 }
+    { name: 'Alice', score: 100 },
+    { name: 'Bob', score: 90 },
+    { name: 'Charlie', score: 80 }
   ];
 
   const leaderboardElement = document.getElementById('leaderboard');
@@ -17,7 +17,7 @@ function displayLeaderboard() {
   const nameHeader = document.createElement('th');
   nameHeader.innerText = 'Name';
   const scoreHeader = document.createElement('th');
-  scoreHeader.innerText = 'Score';
+  scoreHeader.innerText = 'TimeWasted(min)';
   headerRow.appendChild(nameHeader);
   headerRow.appendChild(scoreHeader);
   thead.appendChild(headerRow);

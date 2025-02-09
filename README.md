@@ -1,8 +1,10 @@
-Names of team members are 
+#Names of team members are 
 Ning Zhuang,
 Shalom Obed,
 Keziah Mundlapati,
 and Chinaza Okoye
+
+#Prorotype vide(https://youtube.com/shorts/yyxvk7hUOEQ?feature=share)
 
 
 Most of us can relate with the feeling of scrolling on tik tok just to glance at the time and see that 2 hours have passed without us noticing, we decided to build a solution to that we would all want to use in our day to day lifes. Life is too short although it may sound depressing is our idea of a new innovative way to help people off their phones and productive

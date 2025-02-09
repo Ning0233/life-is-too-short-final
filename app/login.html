@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+  <script src="../scripts/login.js" defer></script>
+</head>
+<body style="font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f0f0f0;">
+  <div class="login-container">
+    <div class="login-box">
+      <h1>Log In</h1>
+      <form id="login-form">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <a id="forgot-password" href="index.html">Forgot Password?</a>
+        <button type="submit" class="btn">Log In</button>
+      </form>
+      <p class="signup-text">Don't Have An Account? <a id="signup" href="signup.html">Sign Up</a></p>
+    </div>
+  </div>
+  <script>
+    const users = JSON.parse(localStorage.getItem('users')) || [];
+
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      const user = users.find(user => user.email === email && user.password === password);
+      if (!user) {
+        alert('Invalid email or password!');
+        return;
+      }
+
+      alert('Login successful!');
+      window.location.href = 'index.html';
+    });
+  </script>
+</body>
+</html>

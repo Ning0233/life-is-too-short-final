@@ -53,6 +53,27 @@ canvas {
   max-height: 600px; /* Increase the maximum height */
 }
 
+.floating-button {
+  position: fixed;
+  bottom: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 80%;
+  width: 60px;
+  height: 60px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.floating-button:hover {
+  background-color: #0056b3;
+}
+
 .leaderboard {
   width: 100%;
   max-width: 600px;
